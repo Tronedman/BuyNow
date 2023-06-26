@@ -1,0 +1,305 @@
+
+body{
+    overflow-x: hidden;
+}
+div,header,nav,html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+.header{
+background-image: url("https://gamerwall.pro/uploads/posts/2022-03/1648477802_1-gamerwall-pro-p-fon-bezdna-krasivie-1.jpg");
+width: 100%;
+background-repeat:repeat-x ;
+background-size: cover;
+height: 12%;
+min-height: 20px;
+margin-bottom:5% ;
+display: inline-block;
+
+}
+@media (max-width: 800px){
+    .header{
+        margin-bottom:9% ;
+    }
+}
+
+.menu-btn {
+    border-color: #ed0200;
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	z-index:2;
+	overflow: hidden;
+}
+.menu-btn span {
+    z-index:3;
+    border-color: #ed0200;
+	width: 5%;
+	height: 25%;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+@media (max-width: 800px){
+    .menu-btn span {
+  width: 13%;
+    }
+    
+}
+.menu {
+    top: 0%;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+   background: #000000;
+	transform: translateX(-100%);
+	transition:  2s; 
+}
+@media(min-width: 800px){
+    .menu{
+        position: relative;
+           top: -20%;
+    }
+}
+.menu.active {
+	transform: translateX(0);
+}
+.menubutton{
+    margin-top: 2%;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 15px 30px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    border-image-slice: 1;
+    margin-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+@media(max-width: 800px){
+    .menubutton {
+        display: flex;
+        width: 90%;
+    }
+}
+  .menubutton:before {
+    transform: skewX(-45deg);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: white;
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+  }
+  .menubutton:hover {
+    background: rgba(255, 255, 255, 0);
+  }
+  .menubutton:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+  }
+  .menubuttonG{
+    margin-left: 20%;
+    margin-top: 2%;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 15px 30px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    border-image-slice: 1;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+@media(max-width: 800px){
+    .menubuttonG {
+        margin-left: 5%;
+        display: flex;
+        width: 90%;
+    }
+}
+  .menubuttonG:before {
+    transform: skewX(-45deg);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: white;
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+  }
+  .menubuttonG:hover {
+    background: rgba(255, 255, 255, 0);
+  }
+  .menubuttonG:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+.conteiner{
+    width: 80% ; 
+     margin: auto;
+ }
+.content{
+    width: 40%;
+   height: 30%;
+    display: inline-block;
+    box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
+}
+.content:hover{
+    transition: all 0.7s ease 0s;
+    transform: scale(50%);
+}
+.content:not(hover){
+    transition: 0.7s;
+}
+@media (max-width: 800px){
+    .content{
+        width: 100%;
+    }
+}
+@media (max-height: 1000px){
+    .content{
+height: 50%;
+    }
+}
+@media (min-height: 500px){
+    .content{
+margin-top: -7%;
+    }
+    
+}
+.content2{
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+    outline: 2px solid #000 ;
+    top: -8%;
+    padding-top: 1em; 
+    border-top-left-radius: 100% 20px; border-bottom-right-radius: 100% 20px;
+}
+@media (min-height: 1000px){
+    .content2{
+        padding-bottom: 1em;
+        position: relative;
+        display: inline-block;
+    }
+}
+@media (max-width: 800px){
+    .content2{
+        width: 100%;
+        display: block;
+        position: static;
+    }
+}
+.content3{
+ 
+   height: 30%;
+    width: 35%;
+    display: inline-block;
+    box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
+}
+
+.content3:hover{
+    transition: all 0.7s ease 0s;
+    transform: scale(50%);
+}
+.content3:not(hover){
+    transition: 0.7s;
+}
+@media (max-width: 800px){
+    .content3{
+       margin-bottom: 7%;
+        width: 100%;
+    }
+}
+@media (max-height: 1000px){
+    .content3{
+height: 50%;
+    }
+}
+.content4{
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+    outline: 2px solid #000 ;
+    top: -10%;
+    padding-top: 1em; 
+    border-top-left-radius: 100% 20px; border-bottom-right-radius: 100% 20px;
+}
+@media (max-width: 800px){
+    .content4{
+        top: -8%;
+        width: 100%;
+        display: block;
+    }
+}
+.logo{
+ top: 0;
+ left: 6%;
+height:100%;
+position: absolute;
+}
+@media(max-width: 800px){
+    .logo{
+        display: none;
+    }
+}
+.footer{
+    
+    width: 100%;
+    height: 20%;
+    background-color: #000000;
+    position: absolute;
+    top: 190%;             
+}
+@media (max-width: 800px){
+    .footer{
+        top: 280%; 
+    }
+}
+.footerText{
+ color: aliceblue;
+ font-size: calc(16px + 16 * ((100vw - 320px) / (1280 - 320)));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
